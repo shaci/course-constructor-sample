@@ -6,7 +6,7 @@
 git clone https://github.com/shaci/course-constructor-sample.git
 
 # enter the project directory
-cd vue-admin-template
+cd course-constructor-sample
 
 # install dependency
 npm install
