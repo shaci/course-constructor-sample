@@ -1,0 +1,116 @@
+.my {
+  &-container {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    background-color: #ffffff;
+
+    font-family: 'PT Sans', Arial, serif;
+  }
+
+  &-title {
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #262C32;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+  }
+
+  &-btn {
+    height: 80px;
+    width: 100%;
+
+    margin-top: 50%;
+  }
+
+  &-btn-row {
+    min-height: calc(100vh - 141px);
+  }
+
+  &-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    margin: 0 -40px 0 0;
+    padding: 0;
+  }
+}
+
+.discipline-card-wrapper {
+  display: block;
+  width: 100%;
+  float: left;
+  transition: width .2s;
+}
+
+.discipline-card {
+  margin: 0 40px 40px 0;
+  color: #474747;
+  z-index: 0;
+  height: 388px;
+  cursor: pointer;
+  background: #F5F5F5;
+  border: 1px solid #E5E5E5;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+
+  &-content {
+    font-family: Cormorant;
+    font-size: 22px;
+    line-height: 27px;
+    color: #262C32;
+    padding: 10px;
+
+    text-align: center;
+  }
+}
+
+.discipline-card:hover {
+  color: #474747;
+  background: #FAFAFA;
+  border: 1px solid #458E22;;
+}
+@media only screen and (min-width: 450px) {
+  .discipline-card-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .discipline-card-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .discipline-card-wrapper {
+    width: 33.333%;
+  }
+}
+
+
+.semibold {
+  font-family: 'PT Sans Semibold', Arial, serif;
+}
+
+.medium {
+  font-family: 'PT Sans Medium', Arial, serif;
+}
+
+hr {
+  border: 0.5px solid #E0E0E0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+

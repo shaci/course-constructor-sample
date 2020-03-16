@@ -1,0 +1,156 @@
+.add {
+  &-title {
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #262C32;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  &-container {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    background-color: #ffffff;
+
+    font-family: 'PT Sans', Arial, serif;
+    hyphens: auto;
+  }
+
+  &-p-info {
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #999999;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &-card {
+    padding: 0px;
+    min-height: 360px;
+    width: 270px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 223, 230);
+  }
+
+  &-card-name {
+    font-size: 18px;
+    line-height: 22px;
+
+    margin-bottom: 12px;
+
+    color: #262C32;
+  }
+
+  &-card-desc {
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #999999;
+    margin: 0px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-btn-row {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+
+    background: #EEEEEF;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &-btn-form {
+    width: 100%;
+  }
+  &-image-container {
+    border-radius: 3px 3px 0 0;
+    width: 270px;
+    height: 150px;
+
+    position: relative;
+  }
+
+  &-avatar {
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    width: 268px;
+    height: 150px;
+
+    object-fit: cover;
+    display: block;
+
+    border-radius: 3px 3px 0 0;
+  }
+
+  &-image-container:hover {
+    cursor: pointer;
+  }
+
+  &-image-container:hover .add-avatar-delete {
+    visibility: visible;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  &-image-container:hover .el-icon-delete {
+    visibility: visible;
+    z-index: 10;
+    color: #ffffff;
+
+    margin: auto;
+  }
+
+  &-avatar-delete {
+    border-radius: 3px 3px 0 0;
+    width: 270px;
+    height: 150px;
+    visibility: hidden;
+
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    transition: background 0.5s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.el-icon-delete {
+  transition: background 0.5s ease;
+  font-size: 28px;
+}
+
+.semibold {
+  font-family: 'PT Sans Semibold', Arial, serif;
+}
+
+.medium {
+  font-family: 'PT Sans Medium', Arial, serif;
+}
+
+hr {
+  border: 0.5px solid #E0E0E0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.el-tabs__active-bar {
+  background-color: #458E22 !important;
+}
